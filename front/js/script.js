@@ -32,5 +32,4 @@ function login_event(e) {
     form.reset();
     message.textContent = data.message;
   });
-
 }
