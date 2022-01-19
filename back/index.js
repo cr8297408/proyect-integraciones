@@ -3,8 +3,9 @@ const app = express();
 const cors = require('cors');
 const passport = require('passport');
 const port = 3000;
-const public_routes = require('./routes/public')
-const auth_routes = require('./routes/auth')
+const public_routes = require('./routes/public');
+const auth_routes = require('./routes/auth');
+const payment_routes = require('./routes/payment');
 
 require('./services')
 app.use(passport.initialize());
@@ -17,6 +18,8 @@ app.use(express.json());
 // Agregando nuestras rutas
 app.use(public_routes);
 app.use(auth_routes);
+app.use(payment_routes);
+
 
 //coment
 

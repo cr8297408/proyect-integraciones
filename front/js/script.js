@@ -18,6 +18,8 @@ function login_event(e) {
   /* Convert data into json */
   var data = Object.fromEntries(formData);
 
+  console.log(data);
+
   const url_login = `${base_url}/login`;
 
   fetch(url_login, {

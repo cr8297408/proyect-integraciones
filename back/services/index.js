@@ -1,1 +1,2 @@
-require('./google')
+require('./google');
+require('./facebook');
