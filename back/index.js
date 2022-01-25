@@ -1,8 +1,9 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
 const cors = require('cors');
 const passport = require('passport');
-const port = 3000;
+const port = process.env.PORT_BACK;
 const public_routes = require('./routes/public');
 const auth_routes = require('./routes/auth');
 const payment_routes = require('./routes/payment');
