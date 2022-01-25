@@ -23,9 +23,8 @@ router.post('/pago', async (req, res) => {
         body: req.body,
         json: true
     }, (err, response) => {
-        res.json({ data: response.body })
+        res.json(response.body.links[1])
     })
-
 });
 
 module.exports = router;
